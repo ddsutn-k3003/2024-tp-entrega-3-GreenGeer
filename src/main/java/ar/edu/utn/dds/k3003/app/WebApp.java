@@ -47,7 +47,7 @@ public class WebApp {
         configureObjectMapper(objectMapper);
         return objectMapper;
     }
-
+//TODO:cambiar formato fecha
     public static void configureObjectMapper(ObjectMapper objectMapper) {
         objectMapper.registerModule(new JavaTimeModule());
         objectMapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
